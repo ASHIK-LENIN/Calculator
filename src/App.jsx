@@ -7,7 +7,7 @@ function App() {
 
   const [result, setResult] = useState(() =>{
     const storedResult = localStorage.getItem('result');
-    return  storedResult ? parseInt(storedResult) : 0;
+    return  storedResult ? parseFloat(storedResult) : 0;
   });
 
 
